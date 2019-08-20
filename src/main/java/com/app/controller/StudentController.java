@@ -131,6 +131,7 @@ public class StudentController {
 	return page;
 	}
 	}
+	// exporting data to Excel view
 	@RequestMapping(value="/exportEXcel")
 	public ModelAndView exportDataToExcel(@RequestParam(required=false,defaultValue="0")Integer stdId) {
 		if(stdId!=0) {
